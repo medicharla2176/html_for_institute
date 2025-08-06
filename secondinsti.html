@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teja Creations</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white transition duration-500 pt-20">
+
+  <!-- Navbar -->
+  <header class="p-4 shadow-md fixed top-0 w-full bg-white dark:bg-gray-800 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Teja Creations</h1>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <button onclick="toggleDarkMode()" class="ml-4">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white" data-aos="fade-up">
+    <h2 class="text-4xl md:text-6xl font-extrabold">Welcome to Teja Creations</h2>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-10 md:p-20 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-4">About Us</h3>
+    <p>We provide world-class services with a focus on quality, creativity, and innovation. Our team is passionate about delivering outstanding digital experiences.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="p-10 md:p-20 bg-white dark:bg-gray-900" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-6">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-200 dark:bg-gray-700 p-6 rounded-xl shadow">Web Design</div>
+      <div class="bg-gray-200 dark:bg-gray-700 p-6 rounded-xl shadow">Digital Marketing</div>
+      <div class="bg-gray-200 dark:bg-gray-700 p-6 rounded-xl shadow">Branding</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-10 md:p-20 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+    <form action="https://formsubmit.co/youremail@example.com" method="POST" class="grid gap-4 max-w-xl">
+      <input type="text" name="name" required placeholder="Your Name" class="p-3 rounded">
+      <input type="email" name="email" required placeholder="Your Email" class="p-3 rounded">
+      <textarea name="message" required placeholder="Your Message" class="p-3 rounded"></textarea>
+      <button type="submit" class="bg-blue-600 text-white p-3 rounded">Send via Email</button>
+    </form>
+
+    <div class="mt-6">
+      <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Teja%20Creations!%20I%20visited%20your%20website." target="_blank" class="text-green-500 underline">Message us on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center bg-white dark:bg-gray-900">
+    <p>&copy; 2025 Teja Creations. All rights reserved.</p>
+  </footer>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+
+  <!-- Google Analytics (Add your ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX'); // Replace with your own ID
+  </script>
+</body>
+</html>
